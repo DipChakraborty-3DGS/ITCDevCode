@@ -74,7 +74,7 @@ public class ClientController {
 	  }
 	  
 	  @GetMapping(value = "/clients/searchByIDNumber/{IDNumber}")
-	  public List<Client> getClientDetailsByIDNumber(@PathVariable String IDNumber){
+	  public Client getClientDetailsByIDNumber(@PathVariable String IDNumber){
 	    return clientservice.findByIDNumber(IDNumber);
 	  }
 	
