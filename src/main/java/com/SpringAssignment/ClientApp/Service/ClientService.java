@@ -116,11 +116,13 @@ public Client update(String idnumber, Client client) {
 			clientToUpdate.setLastName(client.getLastName());
 			clientToUpdate.setAddress(client.getAddress());
 			
+			
+			
 		}
 		
+		clientMap.put(idnumber, clientToUpdate);
 		
-		
-		return clientToUpdate;
+		return client;
 	}
 
 	// This delete() method is used to delete a client having specific IDNumber provided by user
@@ -149,9 +151,12 @@ public Client update(String idnumber, Client client) {
 	}
 
 	 // This method is used to fetch Client details based on given valid SA IDNumber
-	public List<Client> findByIDNumber(String IDNumber) {
-		return clientMap.entrySet().stream().filter(s -> IDNumber.equals(s.getValue().getIDNumber()))
-				.map(x -> x.getValue()).collect(Collectors.toList());
+	public Client findByIDNumber(String IDNumber) {
+		return (Client) clientMap.entrySet().stream().filter(s -> IDNumber.equals(s.getValue().getIDNumber()))
+				.map(Map.Entry::getValue).findFirst().orElse(null);
+		
+		
+		
 	}
 	
 	 // This method is used to fetch Client details based on given Mobile Number
