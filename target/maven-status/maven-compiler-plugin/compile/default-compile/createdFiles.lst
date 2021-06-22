@@ -1,0 +1,16 @@
+com\SpringAssignment\ClientApp\Enity\Address.class
+com\SpringAssignment\ClientApp\Validation\Luhn.class
+com\SpringAssignment\ClientApp\Exception\IdIsNotSouthAfricanIdException.class
+com\SpringAssignment\ClientApp\Validation\IDNumberValidation.class
+com\SpringAssignment\ClientApp\Exception\ErrorResponseBody.class
+com\SpringAssignment\ClientApp\Exception\ClientNotfoundException.class
+com\SpringAssignment\ClientApp\Exception\IDNumberNotValid.class
+com\SpringAssignment\ClientApp\Enity\IDNumberData.class
+com\SpringAssignment\ClientApp\Service\ClientService.class
+com\SpringAssignment\ClientApp\Enity\Client.class
+com\SpringAssignment\ClientApp\Enity\Nationality.class
+com\SpringAssignment\ClientApp\Controller\ClientController.class
+com\SpringAssignment\ClientApp\Exception\CustomizedResponseEntityExceptionHandler.class
+com\SpringAssignment\ClientApp\Exception\MobileNumberNotValidException.class
+com\SpringAssignment\ClientApp\ClientAppApplication.class
+com\SpringAssignment\ClientApp\Enity\Gender.class
